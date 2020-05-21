@@ -1,5 +1,5 @@
 # require modules here
-require_relative "../lib/translator.rb"
+require 'YAML'
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path) 
