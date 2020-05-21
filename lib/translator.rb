@@ -1,7 +1,13 @@
 # require modules here
 
 def load_library
-  # code goes here
+  emoticons = YAML.load_file(file_path) 
+  emoticons = YAML.load_file(file_path)	  new_hash = {} #made new hash
+
+emoticons.each  do |key, value| 
+  new_hash = {	   new_hash[key] = {} 
+   }	   new_hash[key][:english] = value[0] #
+emoticons.each  do |key, value|	   new_hash[key][:japanese] = value[1] 
 end
 
 def get_japanese_emoticon
