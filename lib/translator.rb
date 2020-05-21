@@ -1,5 +1,6 @@
 # require modules here
 require 'YAML'
+require 'pry'
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path) 
